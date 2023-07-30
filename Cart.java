@@ -13,7 +13,7 @@ public class Cart {
         return 0;
     }
 
-    public void addOrderItem() {
+    public void addOrderItem(OrderItem orderItem) {
         // TODO: Implement this method.
     };
 }
