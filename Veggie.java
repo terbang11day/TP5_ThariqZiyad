@@ -1,3 +1,3 @@
-public class Fruit {
+public class Veggie {
     // TODO: Implement this class.
 }

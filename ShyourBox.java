@@ -2,64 +2,91 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ShyourBox {
-    private ArrayList<Product> products;
-    private ArrayList<Cart> carts;
-    private ArrayList<Customer> customers;
+    private ArrayList<Product> products = new ArrayList<Product>();
+    private ArrayList<Cart> carts = new ArrayList<Cart>();
+    private ArrayList<Customer> customers = new ArrayList<Customer>();
 
     public static void main(String[] args) {
-        // TODO: Input file
+        System.out.println("Welcome to ShyourBox! Yuk beli jangan shy shy!");
+
+        addProduct("input/daftarProduk.txt");
+        addCustomer("input/daftarCustomer.txt");
 
         Scanner scanner = new Scanner(System.in);
         int choice;
         do {
-            System.out.println("Selamat datang di ShyourBox");
             System.out.println("Menu" +
-                    "\n1. Cari Produk" +
-                    "\n2. Beli Produk" +
-                    "99. Keluar");
-            System.out.print("Masukkan pilihan: ");
+                    "\n1. Beli Produk" +
+                    "\n2. Cari Produk" +
+                    "\n3. Print Struk" +
+                    "\n0. Keluar");
+            System.out.print("Pilih menu: ");
             choice = scanner.nextInt();
 
             switch (choice) {
                 case 1:
-
+                    buyProduct();
                     break;
-
                 case 2:
-
+                    System.out.print("Cari produk dengan nama: ");
+                    String name = scanner.next();
+                    searchProduct(name);
                     break;
-
-                case 99:
-                    System.out.println("Terima kasih telah menggunakan ShyourBox.");
+                case 3:
                     printReceipt();
                     break;
-
+                case 0:
+                    System.out.println("Yay!");
+                    break;
                 default:
                     System.out.println("Pilihan menu tidak valid.");
                     break;
             }
-
-        } while (true);
+        } while (choice != 0);
+        scanner.close();
     }
 
-    public Product searchProduct(String name) {
+    /**
+     * Method untuk membeli produk.
+     */
+    public static void buyProduct() {
+        // TODO: Implement this method.
+    }
+
+    /**
+     * Method untuk mencari produk berdasarkan nama.
+     * 
+     * @param name
+     * @return
+     */
+    public static Product searchProduct(String name) {
+        // TODO: Implement this method.
         return null;
     }
 
-    public void buy() {
-
+    /**
+     * Method untuk menambahkan produk pada file txt ke dalam list produk.
+     * 
+     * @param fileAddress
+     */
+    public static void addProduct(String fileAddress) {
+        // TODO: Implement this method.
     }
 
-    public void addProduct(String filename) {
-
+    /**
+     * Method untuk menambahkan customer pada file txt ke dalam list customer.
+     * 
+     * @param fileAddress
+     */
+    public static void addCustomer(String fileAddress) {
+        // TODO: Implement this method.
     }
 
-    public void addCustomer(String filename) {
-
-    }
-
+    /**
+     * Method untuk mencetak struk belanja pada file txt.
+     */
     public static void printReceipt() {
-
+        // TODO: Implement this method.
     }
 
 }

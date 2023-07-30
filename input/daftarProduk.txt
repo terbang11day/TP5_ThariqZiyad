@@ -1,0 +1,9 @@
+Fruit, Jeruk Medan, 25000, 25, Lokal
+Veggie, Bawang Brebes, 40000, 20, Konvensional
+Fruit, Apel Malang, 18000, 36, Lokal
+Fruit, Nanas Neynis, 30000, 14, Impor
+Veggie, Kale Angkasa, 80000, 19, Organik
+Veggie, Selada Keriting, 18000, 8, Konvensional
+Fruit, Kiwi Afrika, 39500, 7, Impor
+Veggie, Wortel Brastagi, 40000, 10, Organik
+Fruit, Buah HahAh, Lokal

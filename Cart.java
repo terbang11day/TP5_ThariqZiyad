@@ -2,23 +2,18 @@ import java.util.ArrayList;
 
 public class Cart {
     private Customer customer;
-    private ArrayList<OrderItem> orderItems;
+    private ArrayList<OrderItem> orderList;
 
     Cart() {
-
+        // TODO: Implement this method.
     };
 
     public int getTotalPrice() {
+        // TODO: Implement this method.
         return 0;
     }
 
-
-    // Paid status kenapa int di class diagram?
-    public boolean getPaidStatus() {
-        return false;
-    }
-
     public void addOrderItem() {
-
+        // TODO: Implement this method.
     };
 }
