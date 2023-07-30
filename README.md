@@ -3,7 +3,7 @@ CSGE601021 Dasar-Dasar Pemrograman 2 @ Fakultas Ilmu Komputer Universitas Indone
 Semester Pendek – 2022/2023
 
 ## Dokumen Soal
-Dokumen soal dapat diakses melalui [link ini]().
+Dokumen soal dapat diakses melalui [link ini](https://docs.google.com/document/d/1iT1dp2ssZWuaDLW-p6cTqaduTepxe9dm_BwtVcKTFgw/edit).
 
 
 ## Panduan Memulai
