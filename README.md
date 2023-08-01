@@ -7,7 +7,7 @@ Dokumen soal dapat diakses melalui [link ini](https://docs.google.com/document/d
 
 
 ## Panduan Memulai
-1. Tambahkan ***remote*** baru bernama **`upstream`** untuk mendapatkan code dari repository DDP2 **anda** dengan perintah:
+1. Tambahkan ***remote*** baru pada **repository anda** bernama **`upstream`** untuk mendapatkan code dari repository DDP2 dengan perintah:
     ```bash
     git remote add upstream https://gitlab.com/DDP2-CSUI/sp-ddp2-2023/template-tp5-sp-ddp2.git
     ```
