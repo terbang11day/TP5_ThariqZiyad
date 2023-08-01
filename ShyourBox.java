@@ -9,8 +9,12 @@ public class ShyourBox {
     public static void main(String[] args) {
         System.out.println("Welcome to ShyourBox! Yuk beli jangan shy shy!");
 
-        addProduct("input/daftarProduk.txt");
-        addCustomer("input/daftarCustomer.txt");
+        // Subject to change: file address.
+        String productAddress = "input/daftarProduk.txt";
+        String customerAddress = "input/daftarCustomer.txt";
+
+        addProduct(productAddress);
+        addCustomer(customerAddress);
 
         Scanner scanner = new Scanner(System.in);
         int choice;
