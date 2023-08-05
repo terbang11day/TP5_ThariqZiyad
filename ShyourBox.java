@@ -7,14 +7,15 @@ public class ShyourBox {
     private ArrayList<Customer> customers = new ArrayList<Customer>();
 
     public static void main(String[] args) {
+        ShyourBox shyourboxApp = new ShyourBox();
         System.out.println("Welcome to ShyourBox! Yuk beli jangan shy shy!");
 
         // Subject to change: file address.
         String productAddress = "input/daftarProduk.txt";
         String customerAddress = "input/daftarCustomer.txt";
 
-        addProduct(productAddress);
-        addCustomer(customerAddress);
+        shyourboxApp.addProduct(productAddress);
+        shyourboxApp.addCustomer(customerAddress);
 
         Scanner scanner = new Scanner(System.in);
         int choice;
@@ -29,15 +30,15 @@ public class ShyourBox {
 
             switch (choice) {
                 case 1:
-                    buyProduct();
+                    shyourboxApp.buyProduct();
                     break;
                 case 2:
                     System.out.print("Cari produk dengan nama: ");
                     String name = scanner.next();
-                    searchProduct(name);
+                    shyourboxApp.searchProduct(name);
                     break;
                 case 3:
-                    printReceipt();
+                    shyourboxApp.printReceipt();
                     break;
                 case 0:
                     System.out.println("Yay!");
@@ -53,7 +54,7 @@ public class ShyourBox {
     /**
      * Method untuk membeli produk.
      */
-    public static void buyProduct() {
+    public void buyProduct() {
         // TODO: Implement this method.
     }
 
@@ -63,7 +64,7 @@ public class ShyourBox {
      * @param name
      * @return
      */
-    public static Product searchProduct(String name) {
+    public Product searchProduct(String name) {
         // TODO: Implement this method.
         return null;
     }
@@ -73,7 +74,7 @@ public class ShyourBox {
      * 
      * @param fileAddress
      */
-    public static void addProduct(String fileAddress) {
+    public void addProduct(String fileAddress) {
         // TODO: Implement this method.
     }
 
@@ -82,14 +83,14 @@ public class ShyourBox {
      * 
      * @param fileAddress
      */
-    public static void addCustomer(String fileAddress) {
+    public void addCustomer(String fileAddress) {
         // TODO: Implement this method.
     }
 
     /**
      * Method untuk mencetak struk belanja pada file txt.
      */
-    public static void printReceipt() {
+    public void printReceipt() {
         // TODO: Implement this method.
     }
 
