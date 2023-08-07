@@ -1,12 +1,28 @@
-// Veggie.java
+/**
+ * Veggie adalah subkelas dari Product yang merepresentasikan produk sayuran.
+ */
 public class Veggie extends Product {
     private boolean isOrganic;
 
+    /**
+     * Konstruktor untuk membuat objek Veggie.
+     *
+     * @param name      Nama produk sayuran.
+     * @param price     Harga produk sayuran.
+     * @param stock     Stok produk sayuran.
+     * @param isOrganic true jika sayuran organik, false jika tidak.
+     */
     public Veggie(String name, int price, int stock, boolean isOrganic) {
         super(name, price, stock);
         this.isOrganic = isOrganic;
     }
 
+    /**
+     * Menghitung jumlah diskon yang diberikan berdasarkan kuantitas pembelian.
+     *
+     * @param quantity Kuantitas pembelian produk.
+     * @return Jumlah diskon yang diberikan.
+     */
     @Override
     public int checkDiscount(int quantity) {
         int discount = 0;
