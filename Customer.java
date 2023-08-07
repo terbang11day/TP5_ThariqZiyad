@@ -1,11 +1,17 @@
 public class Customer {
     private String name;
-    private String address;
+    private boolean isPremium;
 
-    public Customer(String name, String address) {
+    public Customer(String name, boolean isPremium) {
         this.name = name;
-        this.address = address;
+        this.isPremium = isPremium;
     }
 
-    // TODO: Implement any additional methods and fields as needed.
+    public String getName() {
+        return name;
+    }
+
+    public boolean isPremium() {
+        return isPremium;
+    }
 }
